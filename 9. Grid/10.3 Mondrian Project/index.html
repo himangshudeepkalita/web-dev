@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    .container {
+      display: grid;
+      gap: 9px;
+      width: 748px;
+      height: 748px;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      background-color: #000;
+    }
+    .one {
+      background-color: #E72F24;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 4;
+    }
+    .two {
+      background-color: #F0F1EC;
+      grid-column-start: 3;
+      grid-column-end: 6;
+      grid-row-start: 1;
+      grid-row-end: 4;
+    }
+    .three {
+      background-color: #F0F1EC;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 4;
+      grid-row-end: 6;
+    }
+    .four {
+      background-color: #F0F1EC;
+      grid-column-start: 3;
+      grid-column-end: 5;
+      grid-row-start: 4;
+      grid-row-end: 6;
+    }
+    .five {
+      background-color: #004592;
+      grid-column-start: 5;
+      grid-column-end: 6;
+      grid-row-start: 4;
+      grid-row-end: 5;
+    }
+    .six {
+      background-color: #F0F1EC;
+      grid-column-start: 5;
+      grid-column-end: 6;
+      grid-row-start: 5;
+      grid-row-end: 7;
+    }
+    .seven {
+      background-color: #F0F1EC;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 6;
+      grid-row-end: 7;
+    }
+    .eight {
+      background-color: #F9D01E;
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 6;
+      grid-row-end: 7;
+    }
+    .nine {
+      background-color: #232629;
+      grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 6;
+      grid-row-end: 7;
+    }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
+      <div class="four"></div>
+      <div class="five"></div>
+      <div class="six"></div>
+      <div class="seven"></div>
+      <div class="eight"></div>
+      <div class="nine"></div>
+    </div>
+  </body>
+</html>
